@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20sp"
+    tools:context=".activity.AddressActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/helveticanowtextextrabold"
+        android:text="Vui lòng điền đầy đủ thông tin nơi nhận hàng"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:text="Full name"
+                android:textSize="20sp" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/textFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:background="@drawable/ic_edittext_bg"
+                android:ems="10"
+                android:fontFamily="@font/helveticanowtextextmedium"
+                android:hint="Name"
+                android:inputType="textPersonName" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:text="Number phone"
+                android:textSize="20sp" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/textNumberPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:background="@drawable/ic_edittext_bg"
+                android:ems="10"
+                android:fontFamily="@font/helveticanowtextextmedium"
+                android:hint="Number phone"
+                android:inputType="number"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:text="Email"
+                android:textSize="20sp" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/textEmailAddr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:background="@drawable/ic_edittext_bg"
+                android:ems="10"
+                android:fontFamily="@font/helveticanowtextextmedium"
+                android:hint="Email" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:text="Address"
+                android:textSize="20sp" />
+
+            <EditText
+                android:maxLines="1"
+                android:id="@+id/textFullAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:background="@drawable/ic_edittext_bg"
+                android:ems="10"
+                android:fontFamily="@font/helveticanowtextextmedium"
+                android:hint="Address" />
+
+            <Button
+                android:id="@+id/btContinue"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="Tiếp tục" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

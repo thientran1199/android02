@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/fragment_user">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/headerText"
+            android:layout_marginBottom="20dp"
+            android:text="Account" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="140dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout style="@style/profileDetailsLayout">
+
+                    <ImageView
+                        android:id="@+id/cartImage"
+                        style="@style/profileDetailsImage"
+                        android:src="@drawable/cart" />
+
+                    <TextView
+                        android:id="@+id/cartName"
+                        style="@style/profileDetailsTextMain"
+                        android:layout_gravity="center"
+                        android:text="Giỏ hàng" />
+
+                </LinearLayout>
+
+                <View style="@style/proifleDetailsView" />
+
+                <LinearLayout style="@style/profileDetailsLayout">
+
+                    <ImageView
+                        android:id="@+id/nameOrder"
+                        style="@style/profileDetailsImage"
+                        android:src="@drawable/smartphone" />
+
+                    <TextView
+                        android:id="@+id/nameTextView"
+                        style="@style/profileDetailsTextMain"
+                        android:layout_gravity="center"
+                        android:text="Đơn nạp thẻ và ứng dụng" />
+
+
+                </LinearLayout>
+
+                <View style="@style/proifleDetailsView" />
+
+                <LinearLayout style="@style/profileDetailsLayout">
+
+                    <ImageView
+                        style="@style/profileDetailsImage"
+                        android:src="@drawable/clock" />
+
+                    <TextView
+                        android:id="@+id/seen"
+                        style="@style/profileDetailsTextMain"
+                        android:layout_gravity="center"
+                        android:text="Sản phẩm đã xem" />
+
+                </LinearLayout>
+
+                <View style="@style/proifleDetailsView" />
+
+                <LinearLayout style="@style/profileDetailsLayout">
+
+                    <ImageView
+                        style="@style/profileDetailsImage"
+                        android:src="@drawable/user" />
+
+                    <TextView
+                        android:id="@+id/profile"
+                        style="@style/profileDetailsTextMain"
+                        android:layout_gravity="center"
+                        android:text="Thiết lập tài khoản" />
+
+                </LinearLayout>
+
+                <View style="@style/proifleDetailsView" />
+
+                <LinearLayout style="@style/profileDetailsLayout">
+
+                    <ImageView
+                        style="@style/profileDetailsImage"
+                        android:src="@drawable/question" />
+
+                    <TextView
+                        android:id="@+id/support"
+                        android:text="Trung tâm hỗ trợ"
+                        android:layout_gravity="center"
+                        style="@style/profileDetailsTextMain" />
+
+                </LinearLayout>
+
+                <View style="@style/proifleDetailsView" />
+
+                <RelativeLayout style="@style/profileDetailsLayout">
+
+                    <ImageView
+                        android:id="@+id/emailImageView"
+                        style="@style/profileDetailsImage"
+                        />
+
+                    <TextView
+                        style="@style/profileDetailsTextMain"
+                        android:layout_toRightOf="@id/emailImageView"
+                        android:text="Email" />
+
+                    <TextView
+                        style="@style/profileDetailsMiniText"
+                        android:layout_toRightOf="@id/emailImageView"
+                        android:text="developer@appsnipp.com" />
+
+                </RelativeLayout>
+
+                <View style="@style/proifleDetailsView" />
+
+                <LinearLayout style="@style/profileDetailsLayout">
+
+                    <ImageView
+                        android:id="@+id/imageLogout"
+                        style="@style/profileDetailsImage"
+                        android:src="@drawable/logout" />
+
+                    <TextView
+                        android:id="@+id/logout"
+                        style="@style/profileDetailsTextMain"
+                        android:layout_gravity="center"
+                        android:text="Logout" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
